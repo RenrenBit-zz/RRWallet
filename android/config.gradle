@@ -1,0 +1,31 @@
+ext {
+
+    libVersions = [
+            "retrofit"           : "2.4.0",
+            "converter-gson"     : "2.4.0",
+            "stetho"             : "1.5.0",
+            "stetho_okhttps"     : "1.5.0",
+            "utilcode"           : "1.16.4",
+            "web3j"              : "3.3.1-android",
+            "rx-androird"        : "1.2.1",
+            "bitcoinj"           : "0.14.7",
+            "stetho_realm"       : "2.2.2",
+            "logging_interceptor": "3.4.1",
+            "converter-scalars"  : "2.0.0",
+            "gson"               : "2.8.5"
+    ]
+
+
+    STETHO = "com.facebook.stetho:stetho:${libVersions["stetho"]}"
+    RETROFIT = "com.squareup.retrofit2:retrofit:${libVersions["retrofit"]}"
+    RETROFIT_GSON = "com.squareup.retrofit2:converter-gson:${libVersions["converter-gson"]}"
+    STETHO_OKHTTP3 = "com.facebook.stetho:stetho-okhttp3:${libVersions['stetho_okhttps']}"
+    UTILS = "com.blankj:utilcode:${libVersions["utilcode"]}"
+    WEB3J = "org.web3j:core:${libVersions["web3j"]}"
+    RXANDROID = "io.reactivex:rxandroid:${libVersions["rx-androird"]}"
+    BITCOINJ = "org.bitcoinj:bitcoinj-core:${libVersions["bitcoinj"]}"
+    STETHO_REALM = "com.uphyca:stetho_realm:${libVersions["stetho_realm"]}"
+    LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:${libVersions["logging_interceptor"]}"
+    CONVERTER_SCALARS = "com.squareup.retrofit2:converter-scalars:${libVersions["converter-scalars"]}"
+    GSON = "com.google.code.gson:gson:${libVersions["gson"]}"
+}

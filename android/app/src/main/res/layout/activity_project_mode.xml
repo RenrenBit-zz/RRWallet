@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/create_eth_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="创建ETH钱包"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/import_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="导入钱包" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="余额查询"
+        android:id="@+id/balance_query"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/delete_wallet"
+        android:text="删除钱包"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/export_private_key"
+        android:text="导出私钥"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/export_key_store"
+        android:textAllCaps="false"
+        android:text="导出 keystore"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/export_mnemonic"
+        android:text="校验助记词"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/send_token"
+        android:text="发送 token"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/token_transfer"
+        android:textAllCaps="false"
+        android:text="token 交易"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/transfer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="交易" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="导入keystore"
+        android:id="@+id/import_keystore"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

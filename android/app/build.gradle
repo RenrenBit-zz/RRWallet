@@ -1,0 +1,202 @@
+apply plugin: "com.android.application"
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+apply from: rootProject.file('config.gradle')
+import com.android.build.OutputFile
+project.ext.react = [
+        entryFile: "index.js",
+        extraPackagerArgs: ["--sourcemap-output", "$projectDir/../../build/android/index.android.map"]
+]
+apply from: "../../node_modules/react-native/react.gradle"
+project.ext.sentryCli = [
+        logLevel: "debug"
+]
+project.ext.vectoricons = [
+        iconFontNames: [ 'iconfont.ttf' ]
+]
+/**
+ * Set this to true to create two separate APKs instead of one:
+ *   - An APK that only works on ARM devices
+ *   - An APK that only works on x86 devices
+ * The advantage is the size of the APK is reduced by about 4MB.
+ * Upload all the APKs to the Play Store and people will download
+ * the correct one based on the CPU architecture of their device.
+ */
+def enableSeparateBuildPerCPUArchitecture = false
+
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.renrenbit.rrwallet"
+        minSdkVersion 21
+        targetSdkVersion 27
+        multiDexEnabled true
+        versionCode getVersionCode("1.0.0")
+        versionName getVersionName("1.0.0")
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+        buildConfigField "Boolean", "USE_TEST_NET", "true"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        packagingOptions {
+            pickFirst '**/libjsc.so'
+            pickFirst '**/libc++_shared.so'
+            exclude 'META-INF/rxjava.properties'
+        }
+    }
+    flavorDimensions "pro"
+    splits {
+        abi {
+            reset()
+            enable enableSeparateBuildPerCPUArchitecture
+            universalApk false  // If true, also generate a universal APK
+            include "armeabi-v7a", "x86"
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("$rootDir/rrwallet.release.keystore")
+            storePassword System.getenv("RRWALLET_KSTOREPWD")
+            keyAlias "rrwallet"
+            keyPassword System.getenv("RRWALLET_KEYPWD")
+        }
+    }
+    productFlavors {
+        rrwallet {
+            applicationId "com.renrenbit.rrwallet"
+        }
+        inhouse {
+            applicationId "com.renrenbit.rrwallet.inhouse"
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
+        }
+
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+    // applicationVariants are e.g. debug, release
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            // For each separate APK per architecture, set a unique version code as described here:
+            // http://tools.android.com/tech-docs/new-build-system/user-guide/apk-splits
+            def versionCodes = ["armeabi-v7a": 1, "x86": 2]
+            def abi = output.getFilter(OutputFile.ABI)
+            if (abi != null) {  // null for the universal-debug, universal-release variants
+                output.versionCodeOverride =
+                        versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
+            }
+            
+        }
+    }
+}
+
+dependencies {
+    implementation "org.webkit:android-jsc:r245459"
+    compile project(':react-native-prompt-android')
+    compile project(':react-native-vector-icons')
+    compile project(':react-native-touch-id')
+    compile project(':react-native-navigation')
+    compile project(':react-native-linear-gradient')
+    compile project(':react-native-image-picker')
+    compile project(':react-native-device-info')
+    compile project(':react-native-camera')
+    compile project(':react-native-svg')
+    compile project(':react-native-view-shot')
+    compile project(':react-native-prompt-android')
+    compile project(':react-native-sentry')
+    compile project(':react-native-fs')
+    compile project(':react-native-languages')
+    compile project(':react-native-webview')
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation RETROFIT
+    implementation STETHO
+    implementation STETHO_OKHTTP3
+    implementation STETHO_REALM
+    implementation WEB3J
+    implementation RXANDROID
+    implementation BITCOINJ
+    implementation CONVERTER_SCALARS
+    implementation GSON
+    implementation 'com.umeng.sdk:common:1.5.3'
+    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+    implementation 'com.umeng.sdk:push:4.2.0'
+    implementation 'com.umeng.sdk:push-xiaomi:1.0.0'
+    implementation 'com.umeng.sdk:push-huawei:1.0.0'
+    implementation 'com.umeng.sdk:push-meizu:1.0.0'
+    compile 'com.umeng.sdk:analytics:7.5.0'
+
+    compile 'com.github.Labmem003:NotificationPageHelper:1.0.1'
+
+    compile project(':react-native-fast-image')
+    implementation 'com.facebook.fresco:animated-gif:1.10.0'
+
+    implementation 'com.google.zxing:core:3.3.3'
+}
+
+// Run this once to be able to run the application with BUCK
+// puts all compile dependencies into folder libs for BUCK to use
+task copyDownloadableDepsToLibs(type: Copy) {
+    from configurations.compile
+    into 'libs'
+}
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    compile.exclude group: 'net.jcip', module: 'jcip-annotations'
+}
+
+def getVersionCode(version) {
+    if (hasProperty("app_version")) {
+        version = app_version
+    }
+
+    version = version.replace(".", "")
+
+    if (version.length() == 3) {
+        version = version.substring(0, 2) + '0' + version.substring(2, 3)
+    }
+    
+    return version as int
+}
+
+def getVersionName(version) {
+    if (hasProperty("app_version")) {
+        version = app_version
+    }
+    return version
+}

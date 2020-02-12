@@ -1,0 +1,21 @@
+{
+  "search.exclude": {
+    "**/android": true,
+    "**/ios": true
+  },
+  "path-intellisense.mappings": {
+    "@img": "${workspaceRoot}/resources/img",
+    "@CC": "${workspaceRoot}/src/component/common",
+    "@i18n": "${workspaceRoot}/src/module/i18n/i18n",
+    "@theme": "${workspaceRoot}/src/util/Theme",
+    "@util": "${workspaceRoot}/src/util",
+    "@page": "${workspaceRoot}/src/page",
+    "@module": "${workspaceRoot}/src/module",
+    "underscore": "lodash"
+  },
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "prettier.jsxBracketSameLine": true,
+  "prettier.configPath": ".prettierrc"
+}

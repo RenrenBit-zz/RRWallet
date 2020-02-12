@@ -1,0 +1,10 @@
+<paths>
+    <files-path
+        name="files"
+        path="public/" />
+
+    <external-path
+        name="external_path"
+        path="dfund/" />
+
+</paths>

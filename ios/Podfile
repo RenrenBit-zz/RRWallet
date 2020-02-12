@@ -1,0 +1,72 @@
+source 'git@github.com:CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+
+def appPods
+  pod 'UMCCommon', '2.1.1'
+  pod 'UMCAnalytics', '5.5.2'
+  pod 'UMCSecurityPlugins', '1.0.6'
+  pod 'AFNetworking', '3.2.1'
+  pod 'SAMKeychain', '1.5.3'
+  pod 'CocoaSecurity', '1.2.4'
+  pod 'CoreBitcoin', :git => 'https://git.coding.net/kufufu9/CoreBitcoin.git', :commit => 'a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2'
+  pod 'FLEX', '2.4.0', :configurations=>['Debug']
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'DevSupport',
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket',
+    'CxxBridge',
+    'RCTImage',
+    'RCTCameraRoll',
+    'RCTLinkingIOS',
+    'RCTActionSheet',
+    'RCTPushNotification',
+    'RCTAnimation',
+    'RCTVibration',
+    'ART'
+  ]
+  
+  pod 'boost-for-react-native', :git => 'https://github.com/react-native-community/boost-for-react-native.git', :commit => '6bbccdd8146ffb75e1ae5e92472f7affb3375c1c'
+  pod 'react-native-navigation',  :podspec => './local-podspec/react-native-navigation.podspec.json'
+
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+  pod 'TouchID', :path => '../node_modules/react-native-touch-id'
+  pod 'react-native-camera', path: '../node_modules/react-native-camera'
+  pod 'react-native-image-picker', path: '../node_modules/react-native-image-picker'
+  pod 'RNDeviceInfo', path: '../node_modules/react-native-device-info'
+  pod 'SentryReactNative', path: '../node_modules/react-native-sentry'
+  pod 'RNFS', path: '../node_modules/react-native-fs'
+  pod 'Picker', :path => '../node_modules/react-native-picker'
+  pod 'RNViewShot', :path => '../node_modules/react-native-view-shot'
+  pod 'RNLanguages', :path => '../node_modules/react-native-languages'
+  pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image'
+  pod 'SDWebImage/WebP', '4.4.2'
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+end
+
+target 'rrwallet-inhouse' do
+    appPods
+end
+
+target 'rrwallet' do
+    appPods
+end
+
+post_install do |p|
+    p.pods_project.targets.each do |targets|
+        targets.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
+            config.build_settings['WARNING_CFLAGS'] = ['-Wno-deprecated-declarations', '-Wno-documentation']
+        end
+    end
+end

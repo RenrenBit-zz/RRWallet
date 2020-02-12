@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RRWallet</string>
+    <string name="app_test">测试入口</string>
+
+    <string name="permission_rationale_message">你已拒绝了权限申请，所以该功能不能正常使用！请授权后再试</string>
+    <string name="permission_denied_forever_message">We need some of the permissions you rejected or the system failed to apply failed, please manually set to the page authorize, otherwise the function can\'t be used normally!</string>
+
+</resources>

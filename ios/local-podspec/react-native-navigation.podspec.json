@@ -1,0 +1,29 @@
+{
+  "name": "react-native-navigation",
+  "version": "1.1.493",
+  "summary": "React Native Navigation - truly native navigation for iOS and Android",
+  "homepage": "https://github.com/wix/react-native-navigation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tal Kol": "talkol@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/wix/react-native-navigation.git",
+    "tag": "v1.1.493"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "ios/**/*.{h,m}"
+  ],
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+      
+    ]
+  }
+}

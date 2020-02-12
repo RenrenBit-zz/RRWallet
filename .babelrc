@@ -1,0 +1,28 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    "@babel/plugin-transform-flow-strip-types",
+    ["@babel/plugin-proposal-decorators", { "legacy": true}],
+    ["@babel/plugin-proposal-class-properties", { "loose": true}],
+    ["transform-inline-environment-variables", { "include": [ "RN_JS_VERSION", "RN_ENV", "RN_CID" ] }],
+    ["module-resolver", {
+      "root": ["./src"],
+      "extensions": [".js"],
+      "alias": {
+        "@img": "./resources/img",
+        "@CC": "./src/component/common",
+        "@i18n": "./src/module/i18n/i18n",
+        "@theme": "./src/util/Theme",
+        "@util": "./src/util",
+        "@page": "./src/page",
+        "@module": "./src/module",
+        "underscore": "lodash"
+      }
+    }]
+  ],
+  "env": {
+    "production": {
+      "plugins": ["transform-remove-console"]
+    }
+  }
+}

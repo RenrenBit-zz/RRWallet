@@ -1,0 +1,62 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.11'
+    ext.supportLibVersion = '27.1.1'
+    repositories {
+        maven {
+            url 'https://dl.google.com/dl/android/maven2'
+        }
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "io.realm:realm-gradle-plugin:5.3.0"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        maven {
+            url 'https://dl.google.com/dl/android/maven2'
+        }
+        maven {
+            url 'https://maven.google.com'
+        }
+        google()
+        jcenter()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url "$rootDir/../node_modules/react-native/android"
+        }
+
+        maven {
+            url 'https://github.com/WickeDev/stetho-realm/raw/master/maven-repo'
+        }
+        maven { url 'https://jitpack.io' }
+        maven {
+            // Local Maven repo containing AARs with JSC library built for Android
+            url "$rootDir/../node_modules/jsc-android/dist"
+        }
+    }
+}
+subprojects {
+    project.configurations.all {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'com.android.support') {
+                if (details.requested.name.contains('support-v4')) {
+                    details.useVersion "$supportLibVersion"
+                }
+                if (details.requested.name.contains('design')) {
+                    details.useVersion "$supportLibVersion"
+                }
+                details.useVersion "$supportLibVersion"
+            }
+        }
+    }
+}

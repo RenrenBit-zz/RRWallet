@@ -1,0 +1,34 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "react-native/react-native": true
+    },
+    "parser": "babel-eslint",
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "legacyDecorators": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-native"
+    ],
+    "rules": {
+        "no-unused-vars": "off",
+        "no-console": "off",
+        "no-useless-escape": "off",
+        "no-empty": ["error", { "allowEmptyCatch": true }],
+        "no-extra-boolean-cast": "off",
+        "no-control-regex": "off",
+        "getter-return": "off"
+    }
+}

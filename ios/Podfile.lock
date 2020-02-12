@@ -1,0 +1,330 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - boost-for-react-native (1.63.0)
+  - BVLinearGradient (2.5.4):
+    - React
+  - CocoaSecurity (1.2.4)
+  - CoreBitcoin (0.6.8.1):
+    - ISO8601DateFormatter
+    - OpenSSL-Universal (= 1.0.1.16)
+  - DoubleConversion (1.1.6)
+  - FLAnimatedImage (1.0.12)
+  - FLEX (2.4.0)
+  - Folly (2018.10.22.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
+  - glog (0.3.5)
+  - ISO8601DateFormatter (0.8)
+  - libwebp (0.6.1):
+    - libwebp/core (= 0.6.1)
+    - libwebp/dec (= 0.6.1)
+    - libwebp/demux (= 0.6.1)
+    - libwebp/dsp (= 0.6.1)
+    - libwebp/enc (= 0.6.1)
+    - libwebp/mux (= 0.6.1)
+    - libwebp/utils (= 0.6.1)
+    - libwebp/webp (= 0.6.1)
+  - libwebp/core (0.6.1):
+    - libwebp/webp
+  - libwebp/dec (0.6.1):
+    - libwebp/core
+  - libwebp/demux (0.6.1):
+    - libwebp/core
+  - libwebp/dsp (0.6.1):
+    - libwebp/core
+  - libwebp/enc (0.6.1):
+    - libwebp/core
+  - libwebp/mux (0.6.1):
+    - libwebp/core
+  - libwebp/utils (0.6.1):
+    - libwebp/core
+  - libwebp/webp (0.6.1)
+  - OpenSSL-Universal (1.0.1.16)
+  - Picker (4.3.7):
+    - Picker/Core (= 4.3.7)
+  - Picker/Core (4.3.7):
+    - React
+  - React (0.59.10):
+    - React/Core (= 0.59.10)
+  - react-native-camera (1.6.3):
+    - React
+    - react-native-camera/RCT (= 1.6.3)
+    - react-native-camera/RN (= 1.6.3)
+  - react-native-camera/RCT (1.6.3):
+    - React
+  - react-native-camera/RN (1.6.3):
+    - React
+  - react-native-fast-image (5.4.2):
+    - FLAnimatedImage (~> 1)
+    - React
+    - SDWebImage/Core (~> 4)
+    - SDWebImage/GIF (~> 4)
+    - SDWebImage/WebP (~> 4)
+  - react-native-image-picker (0.27.2):
+    - React
+  - react-native-navigation (1.1.493):
+    - React
+  - react-native-webview (4.1.0):
+    - React
+  - React/ART (0.59.10):
+    - React/Core
+  - React/Core (0.59.10):
+    - yoga (= 0.59.10.React)
+  - React/CxxBridge (0.59.10):
+    - Folly (= 2018.10.22.00)
+    - React/Core
+    - React/cxxreact
+    - React/jsiexecutor
+  - React/cxxreact (0.59.10):
+    - boost-for-react-native (= 1.63.0)
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+    - React/jsinspector
+  - React/DevSupport (0.59.10):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.59.10)
+  - React/jsi (0.59.10):
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+  - React/jsiexecutor (0.59.10):
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+    - React/cxxreact
+    - React/jsi
+  - React/jsinspector (0.59.10)
+  - React/RCTActionSheet (0.59.10):
+    - React/Core
+  - React/RCTAnimation (0.59.10):
+    - React/Core
+  - React/RCTBlob (0.59.10):
+    - React/Core
+  - React/RCTCameraRoll (0.59.10):
+    - React/Core
+    - React/RCTImage
+  - React/RCTImage (0.59.10):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.59.10):
+    - React/Core
+  - React/RCTNetwork (0.59.10):
+    - React/Core
+  - React/RCTPushNotification (0.59.10):
+    - React/Core
+  - React/RCTText (0.59.10):
+    - React/Core
+  - React/RCTVibration (0.59.10):
+    - React/Core
+  - React/RCTWebSocket (0.59.10):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - RNDeviceInfo (2.1.2):
+    - React
+  - RNFS (2.13.3):
+    - React
+  - RNLanguages (3.0.2):
+    - React
+  - RNSVG (9.4.0):
+    - React
+  - RNVectorIcons (6.4.2):
+    - React
+  - RNViewShot (2.6.0):
+    - React
+  - SAMKeychain (1.5.3)
+  - SDWebImage/Core (4.4.2)
+  - SDWebImage/GIF (4.4.2):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SDWebImage/WebP (4.4.2):
+    - libwebp (~> 0.5)
+    - SDWebImage/Core
+  - Sentry (4.1.3):
+    - Sentry/Core (= 4.1.3)
+  - Sentry/Core (4.1.3)
+  - SentryReactNative (0.42.0):
+    - React
+    - Sentry (~> 4.1.3)
+  - TouchID (4.3.0):
+    - React
+  - UMCAnalytics (5.5.2):
+    - UMCCommon
+  - UMCCommon (2.1.1)
+  - UMCSecurityPlugins (1.0.6)
+  - yoga (0.59.10.React)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.2.1)
+  - boost-for-react-native (from `https://github.com/react-native-community/boost-for-react-native.git`, commit `6bbccdd8146ffb75e1ae5e92472f7affb3375c1c`)
+  - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
+  - CocoaSecurity (= 1.2.4)
+  - CoreBitcoin (from `https://git.coding.net/kufufu9/CoreBitcoin.git`, commit `a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2`)
+  - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - FLEX (= 2.4.0)
+  - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - glog (from `../node_modules/react-native/third-party-podspecs/GLog.podspec`)
+  - Picker (from `../node_modules/react-native-picker`)
+  - react-native-camera (from `../node_modules/react-native-camera`)
+  - react-native-fast-image (from `../node_modules/react-native-fast-image`)
+  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
+  - react-native-navigation (from `./local-podspec/react-native-navigation.podspec.json`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
+  - React/ART (from `../node_modules/react-native`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/CxxBridge (from `../node_modules/react-native`)
+  - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTActionSheet (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
+  - React/RCTCameraRoll (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTLinkingIOS (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTPushNotification (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTVibration (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
+  - RNFS (from `../node_modules/react-native-fs`)
+  - RNLanguages (from `../node_modules/react-native-languages`)
+  - RNSVG (from `../node_modules/react-native-svg`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - RNViewShot (from `../node_modules/react-native-view-shot`)
+  - SAMKeychain (= 1.5.3)
+  - SDWebImage/WebP (= 4.4.2)
+  - SentryReactNative (from `../node_modules/react-native-sentry`)
+  - TouchID (from `../node_modules/react-native-touch-id`)
+  - UMCAnalytics (= 5.5.2)
+  - UMCCommon (= 2.1.1)
+  - UMCSecurityPlugins (= 1.0.6)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CocoaSecurity
+    - FLAnimatedImage
+    - FLEX
+    - ISO8601DateFormatter
+    - libwebp
+    - OpenSSL-Universal
+    - SAMKeychain
+    - SDWebImage
+    - Sentry
+    - UMCAnalytics
+    - UMCCommon
+    - UMCSecurityPlugins
+
+EXTERNAL SOURCES:
+  boost-for-react-native:
+    :commit: 6bbccdd8146ffb75e1ae5e92472f7affb3375c1c
+    :git: https://github.com/react-native-community/boost-for-react-native.git
+  BVLinearGradient:
+    :path: "../node_modules/react-native-linear-gradient"
+  CoreBitcoin:
+    :commit: a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2
+    :git: https://git.coding.net/kufufu9/CoreBitcoin.git
+  DoubleConversion:
+    :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  Folly:
+    :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
+  glog:
+    :podspec: "../node_modules/react-native/third-party-podspecs/GLog.podspec"
+  Picker:
+    :path: "../node_modules/react-native-picker"
+  React:
+    :path: "../node_modules/react-native"
+  react-native-camera:
+    :path: "../node_modules/react-native-camera"
+  react-native-fast-image:
+    :path: "../node_modules/react-native-fast-image"
+  react-native-image-picker:
+    :path: "../node_modules/react-native-image-picker"
+  react-native-navigation:
+    :podspec: "./local-podspec/react-native-navigation.podspec.json"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
+  RNFS:
+    :path: "../node_modules/react-native-fs"
+  RNLanguages:
+    :path: "../node_modules/react-native-languages"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
+  RNViewShot:
+    :path: "../node_modules/react-native-view-shot"
+  SentryReactNative:
+    :path: "../node_modules/react-native-sentry"
+  TouchID:
+    :path: "../node_modules/react-native-touch-id"
+  yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga"
+
+CHECKOUT OPTIONS:
+  boost-for-react-native:
+    :commit: 6bbccdd8146ffb75e1ae5e92472f7affb3375c1c
+    :git: https://github.com/react-native-community/boost-for-react-native.git
+  CoreBitcoin:
+    :commit: a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2
+    :git: https://git.coding.net/kufufu9/CoreBitcoin.git
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  BVLinearGradient: 8cbc5155c978f2e43098818c91d206d07aae6d30
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  CoreBitcoin: 4ac6f6a61e543f08399c2fe57496d4fdcbaf74f9
+  DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  Folly: de497beb10f102453a1afa9edbf8cf8a251890de
+  glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
+  ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
+  libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
+  OpenSSL-Universal: 85ef63bf81d0741b03c8719cd29685c37c59518d
+  Picker: 37554355aef82a532ea95b71b6eeba66bc86182b
+  React: 36d0768f9e93be2473b37e7fa64f92c1d5341eef
+  react-native-camera: 74c37f94ae5a9f2fd9028548ff57f9cc7ef1bc1d
+  react-native-fast-image: 7278563726f2455ed3ba6e04dea472345173278c
+  react-native-image-picker: e47cbaf230af8902316e4d69dc83f959bde45e23
+  react-native-navigation: fa6a06535f3bf27344353864e0cdf87c934dcb2c
+  react-native-webview: caa0f5259fa5781ed07d9b03bc5ddbe3c123f5ed
+  RNDeviceInfo: 75dac2d7cd6b638b512cc9266ce48a39661fed0e
+  RNFS: c9bbde46b0d59619f8e7b735991c60e0f73d22c1
+  RNLanguages: 962e562af0d34ab1958d89bcfdb64fafc37c513e
+  RNSVG: 9cb6e958c4b6a1f58185ac72a350b148947d6fed
+  RNVectorIcons: 2360af3924408c9b3f9064ba0e90d75f79d64705
+  RNViewShot: 05672e0b3c36cd70633466614b4451869a70c6c7
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  Sentry: 4e8a17b61ddd116f89536cc81d567fdee1ebca96
+  SentryReactNative: 09d5cc89e8bb5d80cfaf3ae11ed2ecb0a47317d2
+  TouchID: b816a3db79ac3f9da547d0d0d4bd87ff6e338ca9
+  UMCAnalytics: 6654fd3c8201ff6da5c86a3ae29cd5c8436d3b7b
+  UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  yoga: 684513b14b03201579ba3cee20218c9d1298b0cc
+
+PODFILE CHECKSUM: 7deb39f9ab257899f5ef627e7f077e795531e18e
+
+COCOAPODS: 1.7.5
