@@ -12,7 +12,7 @@
   "dependencies": {
     "base32.js": "0.1.0",
     "bignumber.js": "8.1.1",
-    "buffer": "git+ssh://git@gitlab.com/mf-npm/buffer.git",
+    "buffer": "git+ssh://git@github.com/kufufu9/buffer.git",
     "crypto-js": "3.1.9-1",
     "i18n-js": "3.2.2",
     "jsc-android": "245459.0.0",

@@ -9,7 +9,7 @@ def appPods
   pod 'AFNetworking', '3.2.1'
   pod 'SAMKeychain', '1.5.3'
   pod 'CocoaSecurity', '1.2.4'
-  pod 'CoreBitcoin', :git => 'https://git.coding.net/kufufu9/CoreBitcoin.git', :commit => 'a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2'
+  pod 'CoreBitcoin', :git => 'https://github.com/kufufu9/CoreBitcoin', :commit => 'a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2'
   pod 'FLEX', '2.4.0', :configurations=>['Debug']
   pod 'RNSVG', :path => '../node_modules/react-native-svg'
   pod 'React', :path => '../node_modules/react-native', :subspecs => [

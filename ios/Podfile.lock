@@ -176,7 +176,7 @@ DEPENDENCIES:
   - boost-for-react-native (from `https://github.com/react-native-community/boost-for-react-native.git`, commit `6bbccdd8146ffb75e1ae5e92472f7affb3375c1c`)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - CocoaSecurity (= 1.2.4)
-  - CoreBitcoin (from `https://git.coding.net/kufufu9/CoreBitcoin.git`, commit `a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2`)
+  - CoreBitcoin (from `https://github.com/kufufu9/CoreBitcoin`, commit `a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FLEX (= 2.4.0)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
@@ -240,7 +240,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-linear-gradient"
   CoreBitcoin:
     :commit: a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2
-    :git: https://git.coding.net/kufufu9/CoreBitcoin.git
+    :git: https://github.com/kufufu9/CoreBitcoin
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
@@ -286,7 +286,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/react-native-community/boost-for-react-native.git
   CoreBitcoin:
     :commit: a9a45125ecd2ba30a5f3bea5eaeeb14c7a120ba2
-    :git: https://git.coding.net/kufufu9/CoreBitcoin.git
+    :git: https://github.com/kufufu9/CoreBitcoin
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -325,6 +325,6 @@ SPEC CHECKSUMS:
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   yoga: 684513b14b03201579ba3cee20218c9d1298b0cc
 
-PODFILE CHECKSUM: 7deb39f9ab257899f5ef627e7f077e795531e18e
+PODFILE CHECKSUM: b0e1e3f7b2ba81e8271d3cab6120238422c889e6
 
 COCOAPODS: 1.7.5

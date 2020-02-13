@@ -17,7 +17,6 @@ import io.realm.RealmConfiguration;
  */
 
 public class WalletDbHelper {
-    private static final String KEY = "dU9GjtJ1PeB9jXtjGo505N2dPB6N68YI+EgF4gOVlftU6qLus3k1zs1iuhAkB84LzLhr3u/7cdF/GYBlx4Oxbw==";
     private static final long VERSION_WALLET_DB = 0;
     private static WalletDbHelper sInstance;
     private final RealmConfiguration mConfig;
@@ -51,7 +50,7 @@ public class WalletDbHelper {
             key = Base64.encodeToString(k, Base64.NO_WRAP);
             SharedPreferenceUtils.inst().setValue(spKey,key);
         }
-        return Base64.decode(KEY, Base64.NO_WRAP);
+        return Base64.decode(key, Base64.NO_WRAP);
     }
 
     public synchronized void insertAccount(@NonNull Account account) {
