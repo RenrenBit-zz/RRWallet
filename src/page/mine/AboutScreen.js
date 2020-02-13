@@ -77,7 +77,6 @@ export default class AboutScreen extends Screen {
                 hideRightArrow={false}
                 bottomBorder={true}
               />
-              ,
               <Cell
                 title="Push Token"
                 detail={pushToken}
@@ -85,8 +84,7 @@ export default class AboutScreen extends Screen {
                 hideRightArrow={false}
                 bottomBorder={true}
               />
-              ,
-              <Cell title="Commit ID" detail={AppInfo.commitId} onPress={this.copy.bind(this, AppInfo.commitId)} />,
+              <Cell title="Commit ID" detail={AppInfo.commitId} onPress={this.copy.bind(this, AppInfo.commitId)} />
               <Cell
                 title={i18n.t("mine-version-update")}
                 rightNode={
