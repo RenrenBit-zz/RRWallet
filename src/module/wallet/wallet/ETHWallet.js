@@ -423,7 +423,6 @@ class ETHWallet extends Wallet {
     Device.keepScreenOn(false);
   }
   async shouldUseBatchTransactionContract(contract) {
-    return false;
     const allowance = await ethereum.allowance(contract, this.address, ethereum.ERC20BatchTransferContract);
     return !new BigNumber(allowance).isNaN();
   }

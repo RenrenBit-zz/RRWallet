@@ -6,6 +6,7 @@ RRWallet是一款On-Chain数字货币钱包, 支持多个币种, 可同时运行
 
 * 支持BTC, USDT, ETH, BCH, BSV, ETC等多个币种
 * 支持BTC和USDT多签
+* 智能合约批量发送交易
 * 助记词加密存储在本地
 * 使用React Native开发, 一套代码同时支持iOS, Android
 * 门限签名(即将支持)
