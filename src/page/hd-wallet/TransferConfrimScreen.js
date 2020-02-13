@@ -167,7 +167,7 @@ export default class TransferConfirmScreen extends Component {
             <Section title={i18n.tt(BIZ_SCOPE.wallet, "tx-fee")} detail={this.fee} />
             {this.showNote && <Section title={i18n.tt(BIZ_SCOPE.wallet, "tx-note")} detail={this.note} />}
           </View>
-          <Text style={styles.pwd}>{i18n.tt(BIZ_SCOPE.wallet, "send-password-title")}</Text>,
+          <Text style={styles.pwd}>{i18n.tt(BIZ_SCOPE.wallet, "send-password-title")}</Text>
           <TextInput
             style={styles.input}
             placeholder={i18n.tt(BIZ_SCOPE.wallet, "send-password-placeholder")}
@@ -176,7 +176,6 @@ export default class TransferConfirmScreen extends Component {
             secureTextEntry={true}
             ref={ref => (this.textInput = ref)}
           />
-          ,
         </ScrollView>
         <Footer>
           <Button
