@@ -129,6 +129,6 @@ void init(JNIEnv *env, jobject thiz) {
 }
 
 JNIEXPORT void JNICALL
-Java_com_dcash_wallet_service_wallet_SignChecker_init_1native(JNIEnv *env, jclass type) {
+Java_com_renrenbit_rrwallet_service_wallet_SignChecker_init_1native(JNIEnv *env, jclass type) {
     init(env, type);
 }

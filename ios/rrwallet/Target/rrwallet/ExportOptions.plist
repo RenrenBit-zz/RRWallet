@@ -10,10 +10,6 @@
 	<dict>
 		<key>appURL</key>
 		<string>$(APP_URL)</string>
-		<key>displayImageURL</key>
-		<string>https://mf-web.oss-cn-hangzhou.aliyuncs.com/renrenbit/icon/renrenbit_57x57.png</string>
-		<key>fullSizeImageURL</key>
-		<string>https://mf-web.oss-cn-hangzhou.aliyuncs.com/renrenbit/icon/renrenbit_512x512.png</string>
 	</dict>
 	<key>method</key>
 	<string>ad-hoc</string>

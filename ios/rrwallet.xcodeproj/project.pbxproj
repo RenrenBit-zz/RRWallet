@@ -20,8 +20,6 @@
 		88AC4A9023C3294800A8E1B4 /* RCCTabBarController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49A123C3294800A8E1B4 /* RCCTabBarController+Swizzle.m */; };
 		88AC4A9123C3294800A8E1B4 /* NSDictionary+MFCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49A223C3294800A8E1B4 /* NSDictionary+MFCategory.m */; };
 		88AC4A9223C3294800A8E1B4 /* NSDictionary+MFCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49A223C3294800A8E1B4 /* NSDictionary+MFCategory.m */; };
-		88AC4AB123C3294800A8E1B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88AC49C223C3294800A8E1B4 /* LaunchScreen.xib */; };
-		88AC4AB223C3294800A8E1B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88AC49C223C3294800A8E1B4 /* LaunchScreen.xib */; };
 		88AC4AB323C3294800A8E1B4 /* RRRNEthereum.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49C523C3294800A8E1B4 /* RRRNEthereum.m */; };
 		88AC4AB423C3294800A8E1B4 /* RRRNEthereum.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49C523C3294800A8E1B4 /* RRRNEthereum.m */; };
 		88AC4AB723C3294800A8E1B4 /* RRRNBitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49C823C3294800A8E1B4 /* RRRNBitcoin.m */; };
@@ -75,8 +73,9 @@
 		88AC4B5523C3294800A8E1B4 /* DFETHWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC4A7D23C3294800A8E1B4 /* DFETHWallet.m */; };
 		88AC4B5623C3294800A8E1B4 /* DFETHWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC4A7D23C3294800A8E1B4 /* DFETHWallet.m */; };
 		88AC4B6423C44B6400A8E1B4 /* ethers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AC4A8423C3294800A8E1B4 /* ethers.framework */; };
-		88AC4B6523C44B6400A8E1B4 /* ethers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88AC4A8423C3294800A8E1B4 /* ethers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		88AC4B6723C44D3D00A8E1B4 /* ethers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AC4A8423C3294800A8E1B4 /* ethers.framework */; };
+		88C3365823F5482F0097B18F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C3365723F5482E0097B18F /* LaunchScreen.xib */; };
+		88C3365923F5482F0097B18F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C3365723F5482E0097B18F /* LaunchScreen.xib */; };
 		E5B2BC75A271CAC3903C3B0B /* libPods-rrwallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 282BCF0E52183670D7FA960C /* libPods-rrwallet.a */; };
 /* End PBXBuildFile section */
 
@@ -97,20 +96,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		88AC4B6623C44B6500A8E1B4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				88AC4B6523C44B6400A8E1B4 /* ethers.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		02B65F492B43713E6F859BAF /* Pods-rrwallet-inhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rrwallet-inhouse.release.xcconfig"; path = "Target Support Files/Pods-rrwallet-inhouse/Pods-rrwallet-inhouse.release.xcconfig"; sourceTree = "<group>"; };
 		282BCF0E52183670D7FA960C /* libPods-rrwallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rrwallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +103,6 @@
 		881E631A23CB6A280025AE1A /* bitrenren_ssl.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = bitrenren_ssl.cer; sourceTree = "<group>"; };
 		88AC496823C327C400A8E1B4 /* RRWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AC499223C3288B00A8E1B4 /* RRWallet-inhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RRWallet-inhouse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88AC499523C3294800A8E1B4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		88AC499623C3294800A8E1B4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88AC499823C3294800A8E1B4 /* RCTStatusBarManager+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTStatusBarManager+Swizzle.h"; sourceTree = "<group>"; };
 		88AC499923C3294800A8E1B4 /* RCCTabBarController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCCTabBarController+Swizzle.h"; sourceTree = "<group>"; };
@@ -135,8 +119,6 @@
 		88AC49AD23C3294800A8E1B4 /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
 		88AC49B723C3294800A8E1B4 /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExportOptions.plist; sourceTree = "<group>"; };
 		88AC49B923C3294800A8E1B4 /* rrwallet.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = rrwallet.entitlements; sourceTree = "<group>"; };
-		88AC49C123C3294800A8E1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		88AC49C323C3294800A8E1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		88AC49C523C3294800A8E1B4 /* RRRNEthereum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRRNEthereum.m; sourceTree = "<group>"; };
 		88AC49C823C3294800A8E1B4 /* RRRNBitcoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRRNBitcoin.m; sourceTree = "<group>"; };
 		88AC49C923C3294800A8E1B4 /* RRRNSplash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRRNSplash.m; sourceTree = "<group>"; };
@@ -189,6 +171,7 @@
 		88AC4A7F23C3294800A8E1B4 /* DFETHWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFETHWallet.h; sourceTree = "<group>"; };
 		88AC4B5723C32A5F00A8E1B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88AC4B5923C32A6C00A8E1B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C3365723F5482E0097B18F /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C5FD524F273B0AAAE742DFF5 /* libPods-rrwallet-inhouse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rrwallet-inhouse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAD25E2D73580177E0DEEFE /* Pods-rrwallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rrwallet.release.xcconfig"; path = "Target Support Files/Pods-rrwallet/Pods-rrwallet.release.xcconfig"; sourceTree = "<group>"; };
 		F703684998D227C7B1DC6635 /* Pods-rrwallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rrwallet.debug.xcconfig"; path = "Target Support Files/Pods-rrwallet/Pods-rrwallet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -268,9 +251,7 @@
 				88AC49DF23C3294800A8E1B4 /* main.m */,
 				88AC49E123C3294800A8E1B4 /* Asset.xcassets */,
 				88AC49E023C3294800A8E1B4 /* Images.xcassets */,
-				88AC49C023C3294800A8E1B4 /* LaunchScreen.storyboard */,
-				88AC499423C3294800A8E1B4 /* LaunchScreen.strings */,
-				88AC49C223C3294800A8E1B4 /* LaunchScreen.xib */,
+				88C3365723F5482E0097B18F /* LaunchScreen.xib */,
 			);
 			path = rrwallet;
 			sourceTree = "<group>";
@@ -466,8 +447,8 @@
 				88AC496423C327C400A8E1B4 /* Sources */,
 				88AC496523C327C400A8E1B4 /* Frameworks */,
 				88AC496623C327C400A8E1B4 /* Resources */,
+				88C3365223F530B50097B18F /* Bundle React Native code and images */,
 				5DEDBD29A6478E2EAD0B16E9 /* [CP] Copy Pods Resources */,
-				88AC4B6623C44B6500A8E1B4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -560,9 +541,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C3365823F5482F0097B18F /* LaunchScreen.xib in Resources */,
 				88AC4AD123C3294800A8E1B4 /* Asset.xcassets in Resources */,
 				88AC4ACF23C3294800A8E1B4 /* Images.xcassets in Resources */,
-				88AC4AB123C3294800A8E1B4 /* LaunchScreen.xib in Resources */,
 				881E631B23CB6A280025AE1A /* bitrenren_ssl.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,9 +552,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C3365923F5482F0097B18F /* LaunchScreen.xib in Resources */,
 				88AC4AD223C3294800A8E1B4 /* Asset.xcassets in Resources */,
 				88AC4AD023C3294800A8E1B4 /* Images.xcassets in Resources */,
-				88AC4AB223C3294800A8E1B4 /* LaunchScreen.xib in Resources */,
 				881E631C23CB6A280025AE1A /* bitrenren_ssl.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,6 +658,24 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output ${PROJECT_DIR}/../build/ios/index.ios.map\"\n\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		88C3365223F530B50097B18F /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output ${PROJECT_DIR}/../build/ios/index.ios.map\"\n\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -753,33 +752,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		88AC499423C3294800A8E1B4 /* LaunchScreen.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88AC499523C3294800A8E1B4 /* zh-Hans */,
-			);
-			name = LaunchScreen.strings;
-			sourceTree = "<group>";
-		};
-		88AC49C023C3294800A8E1B4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88AC49C123C3294800A8E1B4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		88AC49C223C3294800A8E1B4 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88AC49C323C3294800A8E1B4 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		88AC497F23C327C500A8E1B4 /* Debug */ = {
@@ -899,7 +871,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = rrwallet/Target/rrwallet/rrwallet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 42HK568B5Q;
 				INFOPLIST_FILE = rrwallet/Target/rrwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -909,7 +881,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.renrenbit.rrwallet;
 				PRODUCT_NAME = RRWallet;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -920,7 +892,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = rrwallet/Target/rrwallet/rrwallet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 42HK568B5Q;
 				INFOPLIST_FILE = rrwallet/Target/rrwallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -930,7 +902,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.renrenbit.rrwallet;
 				PRODUCT_NAME = RRWallet;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -950,7 +922,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.renrenbit.rrwallet.inhouse;
 				PRODUCT_NAME = "RRWallet-inhouse";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -970,7 +942,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.renrenbit.rrwallet.inhouse;
 				PRODUCT_NAME = "RRWallet-inhouse";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

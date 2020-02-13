@@ -185,6 +185,9 @@ captures/
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
 
+# Release Android keystore
+rrwallet.release.keystore
+
 # Freeline
 freeline.py
 freeline/
