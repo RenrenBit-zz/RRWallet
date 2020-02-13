@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import {
   StyleSheet,
   View,
-  TextInput,
-  ScrollView,
   Text,
-  Alert,
   Image,
   TouchableHighlight,
   TouchableWithoutFeedback,
@@ -21,7 +18,6 @@ import ProgressHUD from "../../component/common/ProgressHUD";
 import { padding } from "../../util/UIAdapter";
 import { observer, Observer } from "mobx-react";
 import HDAccount from "../../module/wallet/account/HDAccount";
-import ExportMnemonicWordScreen from "./ExportMnemonicWordScreen";
 import errorHandler from "../../util/ErrorHandler";
 import Tip from "../../component/common/Tip";
 import BackupWalletScreen from "./BackupWalletScreen";

@@ -39,7 +39,6 @@ class ETHWallet extends Wallet {
   constructor(obj = {}) {
     super(obj);
     this.type = Wallet.WALLET_TYPE_ETH;
-    this.mnemonic = obj.mnemonic;
     this.coins = _.compact(
       (obj.coins &&
         obj.coins.map(coin => {
