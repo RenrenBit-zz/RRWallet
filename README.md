@@ -49,3 +49,12 @@ npm run build-ios
 #需要替换掉build.gradle中的Keystore以及对应的密码
 npm run build-android
 ```
+
+
+
+## License
+
+MIT License
+
+Copyright (c) 2020 RenrenBit
+
