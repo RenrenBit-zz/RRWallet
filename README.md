@@ -52,6 +52,12 @@ npm run build-android
 
 
 
+## 社区
+
+欢迎到社区里与我们讨论任何技术问题
+
+[RenrenBit Developer Group(Telegram)](http://t.me/renrenbit_developer)
+
 ## License
 
 MIT License
