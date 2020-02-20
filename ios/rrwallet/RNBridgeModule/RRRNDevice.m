@@ -13,7 +13,7 @@
 #import <AdSupport/AdSupport.h>
 
 #define DEVICE_ID_ACCOUNT @"df_deviceID"
-#define DEVICE_ID_SERVICE @"com.meifan.df.eth"
+#define DEVICE_ID_SERVICE @"com.rrwallet.base"
 
 @implementation RRRNDevice
 

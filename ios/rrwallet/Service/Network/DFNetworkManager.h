@@ -1,13 +1,12 @@
 //
 //  MFNetworkManager.h
-//  MeiFan-iOS
+//  rrwallet
 //
 //  Created by muhuai on 16/7/19.
 //  Copyright © 2016年 MH. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "DFNetworkDefine.h"
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, DFNetworkEnv) {

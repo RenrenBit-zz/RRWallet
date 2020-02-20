@@ -1,6 +1,6 @@
 //
 //  NSDictionary+MFCategory.h
-//  MeiFan-iOS
+//  rrwallet
 //
 //  Created by muhuai on 06/02/2017.
 //  Copyright © 2017 MH. All rights reserved.

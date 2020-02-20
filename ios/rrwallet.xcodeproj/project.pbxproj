@@ -52,8 +52,6 @@
 		88AC4ADA23C3294800A8E1B4 /* DFUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49EB23C3294800A8E1B4 /* DFUserAgent.m */; };
 		88AC4ADB23C3294800A8E1B4 /* DFJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49F123C3294800A8E1B4 /* DFJSONResponseSerializer.m */; };
 		88AC4ADC23C3294800A8E1B4 /* DFJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49F123C3294800A8E1B4 /* DFJSONResponseSerializer.m */; };
-		88AC4ADD23C3294800A8E1B4 /* DFNetworkDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49F223C3294800A8E1B4 /* DFNetworkDefine.m */; };
-		88AC4ADE23C3294800A8E1B4 /* DFNetworkDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49F223C3294800A8E1B4 /* DFNetworkDefine.m */; };
 		88AC4ADF23C3294800A8E1B4 /* DFHTTPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49F323C3294800A8E1B4 /* DFHTTPRequestSerializer.m */; };
 		88AC4AE023C3294800A8E1B4 /* DFHTTPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49F323C3294800A8E1B4 /* DFHTTPRequestSerializer.m */; };
 		88AC4AE123C3294800A8E1B4 /* DFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC49F423C3294800A8E1B4 /* DFSecurityPolicy.m */; };
@@ -150,7 +148,6 @@
 		88AC49EF23C3294800A8E1B4 /* DFUserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUserAgent.h; sourceTree = "<group>"; };
 		88AC49F023C3294800A8E1B4 /* DFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFNetworkManager.h; sourceTree = "<group>"; };
 		88AC49F123C3294800A8E1B4 /* DFJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFJSONResponseSerializer.m; sourceTree = "<group>"; };
-		88AC49F223C3294800A8E1B4 /* DFNetworkDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFNetworkDefine.m; sourceTree = "<group>"; };
 		88AC49F323C3294800A8E1B4 /* DFHTTPRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFHTTPRequestSerializer.m; sourceTree = "<group>"; };
 		88AC49F423C3294800A8E1B4 /* DFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSecurityPolicy.m; sourceTree = "<group>"; };
 		88AC49F623C3294800A8E1B4 /* DFBaseWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBaseWallet.m; sourceTree = "<group>"; };
@@ -366,7 +363,6 @@
 				88AC49EF23C3294800A8E1B4 /* DFUserAgent.h */,
 				88AC49F023C3294800A8E1B4 /* DFNetworkManager.h */,
 				88AC49F123C3294800A8E1B4 /* DFJSONResponseSerializer.m */,
-				88AC49F223C3294800A8E1B4 /* DFNetworkDefine.m */,
 				88AC49F323C3294800A8E1B4 /* DFHTTPRequestSerializer.m */,
 				88AC49F423C3294800A8E1B4 /* DFSecurityPolicy.m */,
 			);
@@ -699,7 +695,6 @@
 				88AC4ACD23C3294800A8E1B4 /* main.m in Sources */,
 				88AC4B5523C3294800A8E1B4 /* DFETHWallet.m in Sources */,
 				88AC4ACB23C3294800A8E1B4 /* RRRNNetwork.m in Sources */,
-				88AC4ADD23C3294800A8E1B4 /* DFNetworkDefine.m in Sources */,
 				88AC4AED23C3294800A8E1B4 /* DFEthereumRPCProvider.m in Sources */,
 				88AC4AC323C3294800A8E1B4 /* RRRNAnalysis.m in Sources */,
 				88AC4ABF23C3294800A8E1B4 /* RRRNQuickAction.m in Sources */,
@@ -735,7 +730,6 @@
 				88AC4ACE23C3294800A8E1B4 /* main.m in Sources */,
 				88AC4B5623C3294800A8E1B4 /* DFETHWallet.m in Sources */,
 				88AC4ACC23C3294800A8E1B4 /* RRRNNetwork.m in Sources */,
-				88AC4ADE23C3294800A8E1B4 /* DFNetworkDefine.m in Sources */,
 				88AC4AEE23C3294800A8E1B4 /* DFEthereumRPCProvider.m in Sources */,
 				88AC4AC423C3294800A8E1B4 /* RRRNAnalysis.m in Sources */,
 				88AC4AC023C3294800A8E1B4 /* RRRNQuickAction.m in Sources */,
