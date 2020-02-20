@@ -17,7 +17,7 @@
     "i18n-js": "3.2.2",
     "jsc-android": "245459.0.0",
     "jsencrypt": "3.0.0-rc.1",
-    "lodash": "4.17.12",
+    "lodash": "4.17.13",
     "mobx": "4.6.0",
     "mobx-react": "5.4.3",
     "moment": "2.24.0",
