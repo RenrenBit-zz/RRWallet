@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "DFNetworkDefine.h"
 
 typedef NS_ENUM(NSUInteger, DFNetworkEnv) {
   DFNetworkEnvRelease = 0,
