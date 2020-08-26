@@ -69,7 +69,6 @@ open class RetrofitUtils {
                             chain.proceed(request)
                         }
                         .writeTimeout(Constants.HTTP_WRITE_TIMEOUT, TimeUnit.SECONDS)
-                        .sslSocketFactory(SSLSocketFactoryUtils.createSSLSocketFactory(Utils.getApp()))
 //                        .hostnameVerifier(SSLSocketFactoryUtils.safeHostnameVerifier())
                         .cookieJar(ReactCookieJarContainer())
                         .build()

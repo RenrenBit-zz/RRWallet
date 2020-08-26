@@ -39,15 +39,6 @@
         manager.afManager.requestSerializer.timeoutInterval = 60.f;
         [manager.afManager.requestSerializer setValue:[NSString stringWithFormat:@"RRWallet/%@", manager.appVersion] forHTTPHeaderField:@"User-Agent"];
       
-        NSData *bitrenren = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"bitrenren_ssl" ofType:@"cer"]];
-        NSString *bitrenrenSignature = [CocoaSecurity sha1WithData:[CocoaSecurity md5WithData:[CocoaSecurity sha256WithData:bitrenren].data].data].hex;
-        if (![bitrenrenSignature isEqualToString:@"4273BCE52CA3F97EA347611BC40B064B1235187E"]) {
-          exit(-1);
-        }
-
-#ifndef DEBUG
-      manager.afManager.securityPolicy = [DFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey withPinnedCertificates:[NSSet setWithObjects:bitrenren, nil]];
-#endif
       
         [manager.afManager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         NSMutableSet *set = [[NSMutableSet alloc] initWithSet:manager.afManager.responseSerializer.acceptableContentTypes];
