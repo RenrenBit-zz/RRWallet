@@ -1,3 +1,9 @@
+## ARCHIVED
+
+* For some unfortunate reasons, this repository has been archived. Please move to [RenrenBit/RRWallet](https://github.com/RenrenBit/RRWallet)
+* 本仓库已归档, 请迁移至[RenrenBit/RRWallet](https://github.com/RenrenBit/RRWallet)
+
+
 RRWallet是一款On-Chain数字货币钱包, 支持多个币种, 可同时运行在iOS, Android上.
 
 
